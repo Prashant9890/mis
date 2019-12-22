@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Daily Expenses</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".hamburger").click(function(){
+			   $(".wrapper").toggleClass("collapse");
+			});
+		});
+	</script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="top_navbar">
+    <div class="hamburger">
+       <div class="one"></div>
+       <div class="two"></div>
+       <div class="three"></div>
+    </div>
+    <div class="top_menu">
+      <div class="logo">logo</div>
+      <ul>
+        <li><a href="#">
+          <i class="fas fa-search"></i></a></li>
+        <li><a href="#">
+          <i class="fas fa-bell"></i>
+          </a></li>
+        <li><a href="#">
+          <i class="fas fa-user"></i>
+          </a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="sidebar">
+      <ul class="abc">
+        <li><a href="#">
+          <span class="icon"><i class="fas fa-hand-holding-usd"></i></span>
+          <span class="title">Income<b class="sub-arrow"></b></span></a>
+         <ul>
+            <li><a href="">Income1</a></li>
+            <li><a href="">Income2</a></li>
+            <li><a href="">Income3</a></li>
+         </ul></li>
+        <li><a href="#">
+          <span class="icon"><i class="fas fa-money-bill"></i></span>
+          <span class="title">Expenses<b class="sub-arrow"></b></span></a>
+            <ul>
+                <li><a href="">Expenses1</a></li>
+                <li><a href="">Expenses2</a></li>
+                <li><a href="">Expenses3</a></li>
+             </ul></li>
+        <li><a href="#">
+          <span class="icon"><i class="fas fa-briefcase"></i></span>
+          <span class="title">Budget<b class="sub-arrow"></b></span></a>
+          <ul>
+              <li><a href="">Budget1</a></li>
+              <li><a href="">Budget2</a></li>
+              <li><a href="">Budget3</a></li>
+           </ul></li>
+        <li><a href="#" class="active">
+          <span class="icon"><i class="fas fa-chart-line"></i></span>
+          <span class="title">Graph $ Report</span>
+          </a></li>
+        <li><a href="#">
+          <span class="icon"><i class="fas fa-user-shield"></i></span>
+          <span class="title">Logout</span>
+          </a></li>
+    </ul>
+  </div>
+  
+  <div class="main_container">
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="2.png" style="width:120px; height: auto; padding-top:10px">
+          <h1> Total Budget</h1>
+          <h2 style="color:red"> Rs 10000</h2>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="1.png" style="width:120px; height: auto; padding-top:10px">
+            <h1> Total Income</h1>
+            <h2 style="color:red"> Rs 10000</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="3.png" style="width:120px; height: auto; padding-top:10px">
+              <h1> Total Expenses</h1>
+              <h2 style="color:red"> Rs 10000</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="4.png" style="width:120px; height: auto; padding-top:10px">
+                <h1> Total User</h1>
+                <h2 style="color:red"> Rs 10000</h2>
+              </div>
+            </div>
+          </div>
+        
+</div>
+	
+</body>
+</html>
